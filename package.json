@@ -1,0 +1,25 @@
+{
+  "name": "serrachat",
+  "version": "1.0.0",
+  "description": "Projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luizito",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizitosuares/SerraChat.git"
+  },
+  "keywords": [
+    "nelson"
+  ],
+  "bugs": {
+    "url": "https://github.com/luizitosuares/SerraChat/issues"
+  },
+  "homepage": "https://github.com/luizitosuares/SerraChat#readme",
+  "dependencies": {
+    "firebase": "^9.21.0"
+  }
+}

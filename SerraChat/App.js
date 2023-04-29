@@ -1,17 +1,26 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
 var firebaseConfig = {
-    apiKey: 'AIzaSyDJtvFsSBhbrT8KHgB8ffB4Gphu7dlMshg',
-    authDomain: 'serrabets.firebaseapp.com',
-    databaseURL: 'https://serrabets-default-rtdb.firebaseio.com',
-    projectId: 'serrabets',
-    storageBucket: 'serrabets.appspot.com',
-    messagingSenderId: '517651439831',
-    appId: '1:517651439831:web:88eab2dc497cfbebf11092',
-    measurementId: 'G-4CW5Z5E69L'
+  apiKey: "AIzaSyAsh0i1BetGzkU-cTcC-LsxPodsCN-y-uc",
+  authDomain: "serrachat-67a78.firebaseapp.com",
+  projectId: "serrachat-67a78",
+  storageBucket: "serrachat-67a78.appspot.com",
+  messagingSenderId: "805797822828",
+  appId: "1:805797822828:web:13044732ae0dd45c49f349",
+  measurementId: "G-Q1RFBXNGVM"
   }
   
   firebase.initializeApp(firebaseConfig)
   var database = firebase.database()
   
+  var database = firebase.database();
+  var ref = database.ref('/');
+
+
+
+
   function salvarAposta() {
     var nome = document.getElementById('nome').value
     var aposta = document.getElementById('aposta').value
@@ -84,5 +93,5 @@ var firebaseConfig = {
     database.ref('/apostas').remove()
   })
   
-  document.getElementById('form').addEventListener('submit', adicionarAposta)
+  document.getElementById('form').addEventListener('submit', salvarAposta)
   firebase.database().ref('/apostas').on('child_added', listarApostas)
