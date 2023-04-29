@@ -1,0 +1,247 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(70, 155, 49)), to(rgb(55, 87, 33))) fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: auto !important;
+
+
+}
+
+
+.scroll-left {
+    color: rgb(255, 255, 255);
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #b5c0b5;
+    
+   }
+   .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 8s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+
+.card{
+    width: 50vw;
+    margin: 55px;
+    margin-bottom: 3em;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 1em auto;
+    color: #000000;
+}
+
+#label{
+    margin-top: 1.4em;
+}
+
+input {
+    padding: 10px;
+    width: 50%;
+    height: 3em;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 1em;
+    border-width: 1px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid #dddddd;
+    cursor:pointer;
+    background-color : #d1d1d1; 
+}
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: hwb(138 25% 29%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 50%;
+    height: 4em;
+    transition: transform .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: #3d52c9;
+    box-shadow: 0px 10px 15px -3px rgba(82, 85, 88, 0.527);
+}
+h2 {
+    text-align: center;
+    margin-top: 1.9em;
+    margin-bottom: 0.1em;
+    color: #000000;
+}
+
+.card-apostas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-left: 985px;
+position: absolute;
+top: -120px;
+background-color: #3d52c9;
+
+}
+.tabela {
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    max-width: 45%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #e2e2e2;
+    max-width: 45%;
+    
+}
+.tabela thead tr{
+    background-color: hwb(138 25% 29%);
+    text-align: center;
+
+}
+.tabela thead {
+    font-size: 16px;
+}
+.tabela thead > tr > th {
+    color: #e2e2e2;    
+}
+.tabela th,
+.tabela td {
+    padding: 12px 15px;
+    text-align: center;
+}
+.tabela tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabela tbody tr:last-of-type {
+    border-bottom: 2px solid #3dc96c;
+}
+
+.tabela tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1d1d1f;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: rgb(80, 130, 240);
+    padding: 0px;
+}
+footer a:active{
+    color: rgb(80, 130, 240);
+}
+footer a:visited{
+    color: rgb(80, 130, 240);
+}
+@media only screen and (max-width: 600px){
+    .card{
+        width: 50vw;
+        margin: 0 auto;
+        margin-bottom: 3em;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2em;
+        border-radius: 1em;
+        
+    }
+}
+
+.teste{
+
+    height: 255px;
+    width: 255px;
+ 
+    margin-left: 800px;
+    position: absolute;
+    top: 320px;
+    text-align: center;
+}
+
+.teste #label{
+
+font-size: 135%;
+
+}

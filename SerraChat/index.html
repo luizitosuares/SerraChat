@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-16x16.png">
+  <title>SerraBet - O melhor site de apostas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<header>
+  <div class="scroll-left"></div>
+
+</header>
+
+<body>
+  <h1>📟SerraChat</h1>
+  <div class="card">
+    <form>
+      <label for="nome" id="label">Digite seu pseudônimo</label>
+      <input type="text" id="nome" name="nome" placeholder="" required  /><br>
+
+      <label for="aposta" id="label">Mensagem  </label>
+      <input type="text" id="aposta" name="aposta" placeholder="" required  /><br>
+      <button type="button" onclick="">Compartilhe Algo ✌</button>
+      <!-- <button type="button" onclick="salvarAposta()" >Salvar</button>-->
+
+    </form>
+    <div class="card-apostas">
+      <h2>Chat: </h2>
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th> Nome </th>
+            <th> Mensagem </th>
+          </tr>
+        </thead>
+        <tbody id="tabelaApostas">
+        </tbody>
+      </table>
+    </div>
+    <div class="teste">
+   
+      <label for="aposta" id="label">Quem é você ?  </label>
+      <input type="text" id="aposta" name="aposta" placeholder="" required  /><br>
+      <button type="button" onclick="">Reflexão da semana</button>
+   
+    </div>
+
+</div>
+
+
+
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/S4nt1ag">Gabriel Santigo </a> , <a
+        href="https://github.com/Arawns1"> Gabriel Damico</a> ,<a href="https://github.com/Artoda"> Rômulo
+        Andriolo</a> & <a href="https://github.com/luizitosuares"> Luizito
+        Suares</a> -
+      2023 © </p>
+  </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+<script src="app.js"></script>
+
+</html>
